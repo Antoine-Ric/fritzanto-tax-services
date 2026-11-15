@@ -88,6 +88,7 @@ var CONFIG = {
     if (isConsult) {
       lines.push("Preferred date: " + data.date);
       lines.push("Preferred time: " + data.time);
+      lines.push("Meeting format: " + (data.meetFormat || "Video call"));
     }
     if (data.message) lines.push("", "Message:", data.message);
     lines.push("", "— Sent from the FritzAnto Tax Services website");
@@ -108,6 +109,7 @@ var CONFIG = {
       var requestType = (document.querySelector('input[name="requestType"]:checked') || {}).value;
       var date = dateInput ? dateInput.value : "";
       var time = timeSelect ? timeSelect.value : "";
+      var meetFormat = (document.querySelector('input[name="meetFormat"]:checked') || {}).value;
       var message = document.getElementById("fMessage").value.trim();
 
       if (!name) return showError("Please add your name so we know who is reaching out.");
@@ -120,7 +122,7 @@ var CONFIG = {
 
       var data = {
         name: name, phone: phone, email: email, service: service,
-        requestType: requestType, date: date, time: time, message: message
+        requestType: requestType, date: date, time: time, meetFormat: meetFormat, message: message
       };
       var mailto = buildMailto(data);
       window.location.href = mailto;

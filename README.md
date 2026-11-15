@@ -1,6 +1,6 @@
 # FritzAnto Tax Services — Website
 
-A simple, fast, mobile-friendly website for FritzAnto Tax Services in Little Haiti, Miami, FL. Hosted free on GitHub Pages.
+A simple, fast, mobile-friendly website for FritzAnto Tax Services in Miami, FL, serving clients all around. Hosted free on GitHub Pages.
 
 **Live site:** https://antoine-ric.github.io/fritzanto-tax-services/
 
@@ -31,7 +31,7 @@ Edit `CONFIG`, commit, and the live site updates in a minute or two.
 
 ## How the booking form works
 
-The form does not need a server. On submit it validates the fields, builds a pre-addressed email (service, date, time, contact details, message) and opens the visitor's email app. The business confirms the time by phone or email. If a real booking calendar (e.g. Calendly) is added later, it can replace the date/time fields.
+The form does not need a server. On submit it validates the fields, builds a pre-addressed email (service, date, time, meeting format — video call, phone, or in person — contact details, message) and opens the visitor's email app. The business confirms the time by phone or email. If a real booking calendar (e.g. Calendly) is added later, it can replace the date/time fields.
 
 ## Deployment
 
